@@ -1,0 +1,67 @@
+.download{
+    font-family: 'Bruno Ace SC', cursive;
+    animation: fadeIn 15s;
+    -webkit-animation: fadeIn 15s;
+    font-size: 25px;
+}
+.txt1{
+    font-family: 'Bree Serif', serif;
+    color: white;
+    animation: fadeIn 5s;
+    -webkit-animation:  fadeIn 5s;
+
+}
+.top{
+    animation: slideIn 4s;
+    -webkit-animation: slideIn 4s;
+    margin-left:30px;
+    padding: 5px;
+    text-shadow: 4px 3px #0000003f;
+}
+p{
+    font-size: 20px;
+}
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+
+    
+@keyframes color-change {
+  0% {
+    background-color: teal;
+  }
+  20% {
+    background-color: gold;
+  }
+  40% {
+    background-color: indianred;
+  }
+  60% {
+    background-color: violet;
+  }
+  80% {
+    background-color: green;
+  }
+  100% {
+    background-color: teal;
+  }
+}
+@keyframes slideIn {
+    0% { margin-left: 150%; }
+    50% { margin-left: 10px; }
+    75%{ margin-left: 35px;}
+    100%{ margin-left: 30px;}
+  }
+body{
+    background-color: rgb(0, 0, 0);
+    background-size: 100%;
+    height: auto;
+    background-image: url(../img/webimg.jpg);
+    background-blend-mode: screen;
+    background-size: cover;
+    background-repeat: repeat;
+    animation: color-change 75000ms ease-in-out infinite;
+    -webkit-animation: color-change 75000ms ease-in-out infinite;
+}
